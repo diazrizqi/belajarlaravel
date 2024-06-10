@@ -52,6 +52,8 @@ Route::get('pagecontrollerrequest', [PageController::class, 'request']);
 Route::get('request', function (Request $request) {
     return $request;
 });
+
+Route::get('pagecontrollerarray', [PageController::class, 'array']); //Tugas Pertama
 // Route::get('users/{id}', function ($id) {});
 // Route::post('users/{id}', function ($id) {});
 
