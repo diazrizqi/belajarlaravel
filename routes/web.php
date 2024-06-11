@@ -57,3 +57,12 @@ Route::get('pagecontrollerarray', [PageController::class, 'array']); //Tugas Per
 
 // Route::put('users/{id}', function ($id) {});
 // Route::delete('users/{id}', function ($id) {});
+
+Route::get('coba', function () {
+    return view('test');
+});
+
+Route::get('table', function () {
+    $data = ['meja','kursi'];
+    return view('table', compact('data'));
+});
