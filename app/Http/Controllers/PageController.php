@@ -14,6 +14,10 @@ class PageController extends Controller
         return 'ini halaman request menggunakan controller';
     }
 
+    public function requestdata(Request $request){
+        return $request;
+    }
+
     public function array(){
         $data = ['php', 'java', 'c', 'javascript', 'dart'];
         return $data;

@@ -49,9 +49,7 @@ Route::match(['get', 'post'], '/user/profile', function () {
 Route::get('pagecontroller', [PageController::class, 'index']);
 Route::get('pagecontrollerrequest', [PageController::class, 'request']);
 
-Route::get('request', function (Request $request) {
-    return $request;
-});
+Route::get('request', [PageController::class, 'requestdata'] );
 
 Route::get('pagecontrollerarray', [PageController::class, 'array']); //Tugas Pertama
 // Route::get('users/{id}', function ($id) {});
