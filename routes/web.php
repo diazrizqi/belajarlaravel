@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 /*
@@ -81,3 +84,6 @@ Route::get('index', function () {
 });
 
 Route::resource('siswa', SiswaController::class);
+Route::resource('post', PostController::class);
+Route::resource('comment', CommentController::class);
+Route::resource('user', UserController::class);
