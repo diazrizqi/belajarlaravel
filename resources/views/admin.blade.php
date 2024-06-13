@@ -364,7 +364,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                @include('flashmessage')
                 @yield('main')
 
                 </div>

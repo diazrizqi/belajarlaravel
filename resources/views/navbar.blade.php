@@ -1,5 +1,4 @@
-        @extends('template')
-        @section('navbar')
+
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">Laravel</a>
             <!-- Sidebar Toggle-->
@@ -23,6 +22,4 @@
                     </ul>
                 </li>
             </ul>
-        @endsection
-        
             
